@@ -1,6 +1,6 @@
                                                  Notibus Inc.
 
-Todo list of server part of NOTI-CHAT 
+Todo list of server/client part of NOTI-CHAT 
 
 Symbols descriptions :
 {
@@ -13,21 +13,48 @@ Symbols descriptions :
 }
 
 
-TODO LIST :
+TODO LIST (server):
 {
     Create basic socket server app (v 0.0.1)
     [
-        IPv4;                                          (@ 1 @)
-        Temporary port "31 000";                       (@ 1 @)
-        4096 active client connection;                 (@ 1 @)
-        1025 host buffer size;                         (@ 1 @)
+        IPv4;                                          (@ 1 @)    []
+        Temporary port "31 000";                       (@ 1 @)    []
+        4096 active client connection;                 (@ 1 @)    []
+        1025 host buffer size;                         (@ 1 @)    []
+        TCP connection;                                (@ 1 @)    []
+        ...
     ] 
 
     Update (v 0.0.2)
     [
-        auto defining of IP addresses;
-        Active port;
-        Compatibility with UI;
-
+        auto defining of IP addresses;                 (@ 1 @)    []
+        Active port;                                   (@ 1 @)    []
+        Compatibility with UI;                         (@ 2 @)    []
+        CMake build support;                           (@ 1 @)    []
+        Logs;                                          (@ 2 @)    []
+        ...
     ]
+
+    Update (v 0.0.3)
+    [
+        IPv6;                                          (@ 2 @)    []
+        UDP connection;                                (@ 2 @)    []
+        ...
+    ]
+}
+
+
+TODO LIST (client):
+{
+    Create basic socket server app (v 0.0.1)
+    [
+        IPv4;                                          (@ 1 @)    []
+        ;                       (@ 1 @)    []
+        ;                 (@ 1 @)    []
+        ;                         (@ 1 @)    []
+        TCP connection;                                (@ 1 @)    []
+    ] 
+
+    Update (v 0.0.2)
+    []
 }

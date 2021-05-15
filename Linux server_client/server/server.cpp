@@ -37,6 +37,7 @@ struct vars
     bool fail_flag_bind_sock = false;
     bool fail_flag_listen_sock = false;
     bool fail_flag_received_data = false;
+    bool fail_flag_client_sock = false;
 
     char host[NI_MAXHOST];
     char service[NI_MAXSERV];
@@ -122,9 +123,9 @@ int main()
 
 //------------------------------------------------------------------------//
     // Errors check
-    var.fail_flag_listen_sock = isFailure(clientSocket);
+    var.fail_flag_client_sock = isFailure(clientSocket);
 
-    errorExit(var.fail_flag_listen_sock, CALL_ACCEPT, CALL_ACCEPT_ERROR);
+    errorExit(var.fail_flag_client_sock, CALL_ACCEPT, CALL_ACCEPT_ERROR);
 //------------------------------------------------------------------------//
 //########################################################################################//
 
@@ -182,7 +183,7 @@ int main()
 
 //########################################################################################//
     // Display message
-    std::cout << "Received: " << std::string(var.messageBuffer, 0, var.bytesRecieve);
+    std::cout << "Received: " << std::string(var.messageBuffer, 0, var.bytesRecieve) << "\n";
 //########################################################################################//
 
 //########################################################################################//

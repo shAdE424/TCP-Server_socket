@@ -1,4 +1,6 @@
 chat.code-workspace
 .vscode
 server_build
+client_build
 git_commands.txt
+Makefile
