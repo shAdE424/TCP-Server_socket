@@ -1,0 +1,33 @@
+                                                 Notibus Inc.
+
+Todo list of server part of NOTI-CHAT 
+
+Symbols descriptions :
+{
+    " [] " - atributes that should be included in particular area of programm
+    " @ @ " - priority {
+        1 - important,
+        2 - should be done after important,
+        3 - fitches
+    } 
+}
+
+
+TODO LIST :
+{
+    Create basic socket server app (v 0.0.1)
+    [
+        IPv4;                                          (@ 1 @)
+        Temporary port "31 000";                       (@ 1 @)
+        4096 active client connection;                 (@ 1 @)
+        1025 host buffer size;                         (@ 1 @)
+    ] 
+
+    Update (v 0.0.2)
+    [
+        auto defining of IP addresses;
+        Active port;
+        Compatibility with UI;
+
+    ]
+}
