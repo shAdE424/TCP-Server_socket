@@ -17,17 +17,18 @@ TODO LIST (server):
 {
     Create basic socket server app (v 0.0.1)
     [
-        IPv4;                                          (@ 1 @)    []
-        Temporary port "31 000";                       (@ 1 @)    []
-        4096 active client connection;                 (@ 1 @)    []
-        1025 host buffer size;                         (@ 1 @)    []
-        TCP connection;                                (@ 1 @)    []
-        ...
+        IPv4;                                          (@ 1 @)    [+]
+        Temporary port "31 000";                       (@ 1 @)    [+]
+        4096 message buffer size;                      (@ 1 @)    [+]
+        1025 host buffer size;                         (@ 1 @)    [+]
+        TCP connection;                                (@ 1 @)    [+]
+        1 client:                                      (@ 1 @)    [+]
     ] 
 
     Update (v 0.0.2)
     [
         auto defining of IP addresses;                 (@ 1 @)    []
+        muliple clients:                               (@ 1 @)    []
         Active port;                                   (@ 1 @)    []
         Compatibility with UI;                         (@ 2 @)    []
         CMake build support;                           (@ 1 @)    []

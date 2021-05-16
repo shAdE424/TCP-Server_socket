@@ -14,6 +14,8 @@
 #include <netdb.h>
 #include <string.h>
 #include <string>
+#include <time.h> //FD_SET, FD_ISSET, FD_ZERO macros
+
 
 // Macros
 #define SERVER_SOCK "server socket"
@@ -174,7 +176,7 @@ int main()
 
     if (var.bytesRecieve == 0)
     {
-        std::cout << "Client disconnected\n";
+        std::cout << "Client connection terminated\n";
 
         break;
     }
