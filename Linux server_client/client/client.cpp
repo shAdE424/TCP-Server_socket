@@ -130,7 +130,7 @@ int main()
 
         var.fail_flag_message_send_result = isFailure(messageSendResult);
 
-        // If message ws not delivered because of some errors skip cleaning buffer and start again
+        // If message was not delivered because of some errors skip cleaning buffer and start again
         if (var.fail_flag_message_send_result == true) 
         { 
             connectionLog(var.fail_flag_message_send_result, MESSAGE_SEND_RESULT, MESSAGE_SEND_RESULT_ERROR);

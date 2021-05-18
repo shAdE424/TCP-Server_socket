@@ -9,7 +9,9 @@ Symbols descriptions :
         1 - important,
         2 - should be done after important,
         3 - fitches
-    } 
+    }
+
+    " <> " - the aim of given parametr 
 }
 
 
@@ -30,7 +32,6 @@ TODO LIST (server):
         auto defining of IP addresses;                 (@ 1 @)    []
         muliple clients:                               (@ 1 @)    []
         Active port;                                   (@ 1 @)    []
-        Compatibility with UI;                         (@ 2 @)    []
         CMake build support;                           (@ 1 @)    []
         Logs;                                          (@ 2 @)    []
         ...
@@ -40,6 +41,8 @@ TODO LIST (server):
     [
         IPv6;                                          (@ 2 @)    []
         UDP connection;                                (@ 2 @)    []
+        Compatibility with UI;                         (@ 1 @)    []
+        Exchange with files <images>;                  (@ 2 @)    []
         ...
     ]
 }

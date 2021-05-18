@@ -14,6 +14,7 @@
 #include <netdb.h>
 #include <string.h>
 #include <string>
+#include <fstream>
 #include <time.h> //FD_SET, FD_ISSET, FD_ZERO macros
 
 
@@ -66,6 +67,10 @@ bool isFailure(const T& atribute)
 {
     return (atribute == -1) ? true : false;
 }
+
+// Write recieved data to the file
+void logWriteInFile()
+{}
 
 int main()
 {
