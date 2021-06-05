@@ -27,11 +27,14 @@
 // Struct to store variebles and data structures
 struct vars
 {
-    int port = 31000;
+    int port = 54000;
     int sock_len = sizeof(sockaddr_in);
 
     // Loop-back address (local machine)
     std::string ipAddress = "127.0.0.1";
+
+    //std::string ipAddress = "185.163.26.41";
+
     std::string messageInUsr;
 
     bool fail_flag_clientConnection_sock = false;

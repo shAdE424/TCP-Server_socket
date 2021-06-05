@@ -62,15 +62,13 @@ void errorExit(bool fatal_error, std::string fail_origin, int error_code)
 }
 
 // Checking if failure is occured 
-template <typename T>
-bool isFailure(const T& atribute)
+bool isFailure(const int& atribute)
 {
     return (atribute == -1) ? true : false;
 }
 
 // Write recieved data to the file
-void logWriteInFile()
-{}
+void writeInFile() {}
 
 int main()
 {
@@ -96,7 +94,7 @@ int main()
     sockaddr_in bind_sock;
 
     bind_sock.sin_family = AF_INET;
-    bind_sock.sin_port = htons(31000);
+    bind_sock.sin_port = htons(54000);
 
     inet_pton(AF_INET, "0.0.0.0", &bind_sock.sin_addr);
 
