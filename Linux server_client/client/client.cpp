@@ -64,8 +64,7 @@ void connectionLog(bool fatal_error, std::string fail_origin, int error_code)
 }
 
 // Checking if failure is occured 
-template <typename T>
-bool isFailure(const T& atribute)
+bool isFailure(const int& atribute)
 {
     return (atribute == -1) ? true : false;
 }
